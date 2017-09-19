@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abtUs"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bullet"
+    tools:context="com.unica.planit.AboutUs">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="About Us"
+        android:background="#F0CDFF"
+        android:paddingBottom="15dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="PlanIt is a simple to-do list that helps the user get stuff done.
+
+        Users can add, organize and keep track of the things they need to do.
+
+        It also lets the user to set or schedule due dates and reminders that will alert them to ensure they never forget important deadlines.
+
+        Users can manage tasks effectively and see all the items at a glance and prioritize what most needs to be done according to timeline and importance.
+
+        PlanIt is easy to use and has a clean, simple and pleasing design to help users focus on the tasks that needs to be done without any distracting elements. "
+        android:paddingLeft="90dp"
+        android:paddingTop="95dp"
+        android:paddingRight="87dp"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

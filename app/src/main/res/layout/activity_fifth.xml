@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.unica.planit.FifthActivity"
+    android:id="@+id/bgPT"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bullet">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Progress Tracker"
+        android:background="#89FFD9"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/etT1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="Go to Task 1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="90dp"
+        android:background="#89FFD9"
+        android:onClick="goTo" />
+    <Button
+        android:id="@+id/etT2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="Go to Task 2"
+        android:background="#89FFD9"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="goToRem2"
+        android:layout_below="@+id/etT1"
+        />
+    <Button
+        android:id="@+id/etT3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#89FFD9"
+        android:text="Go to Task 3"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/etT2"
+        android:onClick="goToRem3"/>
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:stretchColumns="0,1"
+    android:id="@+id/bgAddRem"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bullet"
+    tools:context="com.unica.planit.AddReminders">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Reminders"
+        android:background="#FF9CC3"
+        android:paddingBottom="15dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+
+        android:background="#FF9CC3"
+        android:paddingBottom="1dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="315dp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="53dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:background="#FF9CC3"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Add Title..."
+        android:paddingTop="95dp"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Description:"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="410dp"
+        android:background="#FF9CC3"/>
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTitle"
+        android:inputType="textLongMessage"
+        android:hint="Add Description..."
+        android:paddingTop="80dp"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Deadline:"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="270dp"
+        android:background="#FF9CC3"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textColor="#db4c66"
+        android:textStyle="bold"
+        android:layout_marginTop="355dp"
+        android:paddingLeft="20dp"
+        android:textSize="18sp"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="145dp"
+        android:background="#ffff"
+        android:textSize="16sp"
+        android:layout_marginTop="350dp" />
+    <TimePicker
+        android:id="@+id/simpleTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_marginTop="380dp"/>
+
+</RelativeLayout>

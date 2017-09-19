@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgHome"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home"
+    tools:context="com.unica.planit.MainActivity">
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        />
+    <Button
+        android:id="@+id/etRem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Reminders"
+        android:layout_marginBottom="1dp"
+        android:background="#FF9CC3"
+        android:onClick="callSecondActivity"/>
+    <Button
+        android:id="@+id/etToDo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="To-Do List"
+        android:background="#FFFDCD"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@id/etRem"
+        android:onClick="callThirdActivity"/>
+    <Button
+        android:id="@id/etCal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#A0FFA4"
+        android:text="Calendar"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@id/etToDo"
+        android:onClick="callFourthActivity"/>
+    <Button
+        android:id="@+id/etPT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCal"
+        android:background="#89FFD9"
+        android:text="Progress Tracker"
+        android:layout_marginBottom="1dp"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:onClick="callFifthActivity"/>
+    <View
+        android:layout_marginTop="240dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        />
+    <Button
+        android:id="@+id/etAU"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPT"
+        android:background="#F0CDFF"
+        android:text="About Us"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:onClick="aboutUs"/>
+
+</RelativeLayout>

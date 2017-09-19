@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgTD2"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bullet"
+    tools:context="com.unica.planit.TodoLayout">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="To Do List"
+        android:background="#FFFDCD"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:background="#FFFDCD"
+        android:textSize="16sp"
+        android:paddingTop="7dp"
+        android:layout_marginLeft="315dp"
+        android:onClick="deleteToDo"/>
+    <CheckBox
+        android:id="@+id/etT1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="left"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="To Do 1"
+        android:textSize="17sp"
+        android:checked="false"
+        android:layout_marginTop="90dp"
+        android:background="#FFFDCD" />
+    <CheckBox
+        android:id="@+id/etT2"
+        android:checked="false"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="To Do 2"
+        android:textSize="17sp"
+        android:background="#FFFDCD"
+        android:gravity="left"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/etT1"
+        />
+    <CheckBox
+        android:id="@id/etT3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#FFFDCD"
+        android:checked="false"
+        android:textSize="17sp"
+        android:text="To Do 3"
+        android:gravity="left"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/etT2"/>
+
+</RelativeLayout>

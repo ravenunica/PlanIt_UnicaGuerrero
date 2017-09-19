@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgRem"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bullet"
+    tools:context="com.unica.planit.SecondActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Reminders"
+        android:background="#FF9CC3"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/textView3" />
+    <View
+        android:layout_marginTop="80dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        />
+    <Button
+        android:id="@+id/etAddRem"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="left"
+        android:paddingTop="20dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="95dp"
+        android:text="Add New Reminders"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#FF9CC3"
+        android:onClick="addReminders"
+        />
+    <Button
+        android:id="@+id/etViewRem"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="View Reminders"
+        android:background="#FF9CC3"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:paddingTop="20dp"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/etAddRem"
+        android:onClick="viewReminders"/>
+
+</RelativeLayout>
